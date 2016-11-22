@@ -6,16 +6,19 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<properties>
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.netbeans</groupId>
 			<artifactId>lib.profiler</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>1.x</version>
+			<scope>system</scope>
+			<systemPath>${java.home}/../lib/visualvm/profiler/modules/org-netbeans-lib-profiler.jar</systemPath>
 		</dependency>
+
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
